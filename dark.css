@@ -1,0 +1,215 @@
+#workbod{
+    background:black;
+    margin:0;
+    padding:0;
+  }
+
+  header{
+    /*background:linear-gradient(#2f97c1,#bae3e8,#eafdf8);*/
+    height:300px;
+    width:100%;
+  }
+header{
+  
+  width:100%;
+  height:165px;
+  position:relative;
+  top:-10px;
+}
+  /*waves in the header*/
+  header .wave{
+    position:absolute;
+    height:165px;
+    width:100%;
+    left:0;
+    right:0;
+    top:0;
+    background-image:url("assets/wave.png");
+    background:cover;
+    animation-direction: normal;
+    animation:wave 10s linear infinite;
+    opacity:1;
+  }
+
+  header .wave:before{
+    content:"";
+    width:100%;
+    height:165px;
+    background-image:url("assets/wave.png");
+    opacity:0.4;
+    position:absolute;
+    top:0;
+    left:0;
+    animation:wave-reverse 7s linear infinite;
+    animation-direction: normal;
+    background:cover;
+
+  }
+
+  header .wave:after{
+    content:"";
+    width:100%;
+    height:171px;
+    background-image:url("assets/wave.png");
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0.2;
+    animation:wave-reverse 5s linear infinite;
+    animation-direction: reverse;
+    background:cover;
+    
+  }
+  /*keyframes for the wave*/
+@keyframes wave{
+  0%{
+    background-position:0;
+  }
+  100%{
+    background-position:1360px;
+  }
+}
+
+@keyframes wave-reverse{
+  0%{
+    background-position:1360px;
+  }
+  100%{
+    background-position:0;
+  }
+}
+
+.pictures{
+  margin-top:-100px;
+}
+
+  #workfoot{
+    width:100%;
+    height:200px;
+    position:absolute;
+    bottom:0;
+  }
+
+.contact{
+  margin-left:37%;
+}
+.contact ul li{
+text-align:center;
+font-family:"Varela Round", sans-serif;
+font-size:20px;
+color:red;
+text-decoration: none;
+list-style:none;
+display:inline-block;
+}
+
+  /*to zoom pictures on hover*/
+  .zoom {
+    margin-top:-50px;
+    padding: 40px;
+    transition: transform .2s; /* Animation */
+    width: 250px;
+    height: 150px;
+    margin-left:20%;
+    z-index:2;
+    position:absolute;
+    border-radius: 2%;
+    background-image:url(assets/plotinee.jpg);
+    background-color: black;
+    background-size:130px 150px;
+    background-repeat: no-repeat;
+    text-align:center;
+  }
+  
+  .zoom1 {
+    margin-top:300px;
+    padding: 40px;
+    transition: transform .2s; /* Animation */
+    width: 250px;
+    height: 150px;
+    margin-left:20%;
+    z-index:2;
+    position:absolute;
+    border-radius: 2%;
+    background-image:url(assets/shiba-inu_01_lg.jpg);
+    background-size: 250px 150px;
+    background-repeat: no-repeat;
+  }
+  .zoom:hover {
+    transform: scale(2.5); /* (250% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    border-radius:2%;
+    background-image:url(assets/plotine.png);
+    background-size:250px 150px;
+  }
+
+  .zoom1:hover {
+    transform: scale(2.5); /* (250% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    border-radius:2%;
+    background-image:url(assets/shiba.png);
+    background-size:250px 150px;
+  }
+  
+  .pictures{
+    position:relative;
+    margin-top:100px;
+    padding-bottom:100px;
+  }
+  .zoom1>.link:hover{
+    display:none;
+  }
+
+
+  /*toggle slider*/
+  /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
