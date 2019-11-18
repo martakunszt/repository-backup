@@ -68,7 +68,7 @@
     width: 80%;
     padding: 20px;
     text-align: center;
-    font-family:'Varela Round', sans-serif;
+    font-family:'Raleway', sans-serif;
   }
   
   h1{
@@ -85,7 +85,7 @@
     margin-left:40%;
     z-index:2;
     display: block;
-    font-family:'Varela Round', sans-serif;
+    font-family:'Raleway', sans-serif;
     position:absolute;
   
   }
@@ -206,18 +206,18 @@ header{
 }
 
   #workfoot{
-    width:100%;
-    height:200px;
     position:absolute;
     bottom:0;
+    width: 100%;
+    height: 2.5rem; 
   }
 
 .contact{
-  margin-left:37%;
+  margin-left:35%;
 }
 .contact ul li{
 text-align:center;
-font-family:"Varela Round", sans-serif;
+font-family:"Raleway", sans-serif;
 font-size:20px;
 color:#2f97c1;
 text-decoration: none;
@@ -227,12 +227,9 @@ display:inline-block;
 
   /*to zoom pictures on hover*/
   .zoom {
-    margin-top:10%;
-    padding: 40px;
     transition: transform .2s; /* Animation */
     width: 500px;
     height: 350px;
-    margin-left:20%;
     z-index:2;
     position:absolute;
     border-radius: 2%;
@@ -244,12 +241,9 @@ display:inline-block;
   }
   
   .zoom1 {
-    margin-top:10%;
-    padding: 40px;
     transition: transform .2s; /* Animation */
     width: 500px;
     height: 350px;
-    margin-left:20%;
     z-index:2;
     position:absolute;
     border-radius: 2%;
@@ -261,7 +255,6 @@ display:inline-block;
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     border-radius:2%;
     background-color:black;
-    opacity:0.5;
     background-size:500px 350px;
     
   }
@@ -270,15 +263,17 @@ display:inline-block;
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
     border-radius:2%;
     background-color:black;
-    opacity:0.7;
     background-size:500px 350px;
     
   }
   
   .pictures{
     position:relative;
-    margin-top:10%;
-    padding-bottom:10%;
+    margin-top:2.5%;
   }
 
-.mySlides {display:none;}
+.mySlides {
+  position:absolute;
+  left:33%;
+
+}
