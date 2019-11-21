@@ -6,7 +6,7 @@
     margin:0;
     padding:0;
   }
-  
+  /*animation for the background index.html*/
   @keyframes drift{
       0%{
         transform: rotate(0deg);
@@ -52,7 +52,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
-    animation: drift 3000ms infinite ease-in-out;
+    animation: drift 3000ms infinite ease-in-out; /*animation*/
     animation-direction: alternate-reverse;
   }
   .mtext{
@@ -73,6 +73,7 @@
   
   h1{
       font-size:50px;
+      
   }
 
   .footnote{
@@ -201,10 +202,11 @@ header{
   }
 }
 
-.pictures{
-  margin-top:-100px;
+/*.container{
+  position: relative;
+  width: 50%;
 }
-
+*/
   #workfoot{
     position:absolute;
     bottom:0;
@@ -224,56 +226,99 @@ text-decoration: none;
 list-style:none;
 display:inline-block;
 }
-
-  /*to zoom pictures on hover*/
-  .zoom {
-    transition: transform .2s; /* Animation */
-    width: 500px;
-    height: 350px;
-    z-index:2;
-    position:absolute;
-    border-radius: 2%;
-    background-image:url(assets/plotine.png);
-    background-color: black;
-    background-size:500px 350px;
-    background-repeat: no-repeat;
-    text-align:center;
-  }
-  
-  .zoom1 {
-    transition: transform .2s; /* Animation */
-    width: 500px;
-    height: 350px;
-    z-index:2;
-    position:absolute;
-    border-radius: 2%;
-    background-image:url(assets/shiba.png);
-    background-size: 500px 350px;
-    background-repeat: no-repeat;
-  }
-  .zoom:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    border-radius:2%;
-    background-color:black;
-    background-size:500px 350px;
-    
-  }
-
-  .zoom1:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    border-radius:2%;
-    background-color:black;
-    background-size:500px 350px;
-    
-  }
-  
-  .pictures{
-    position:relative;
-    margin-top:2.5%;
-  }
-
-.mySlides {
-  position:absolute;
-  left:33%;
-
+.contact ul li a{
+text-decoration: none;
+color:#2f97c1;
 }
+.contact ul li a:visited{
+  text-decoration: none;
+  color:#2f97c1;
+  }
+
+  /*pictures with overlay*/
+  .zoom img {
+   position: absolute;
+   top:15%;
+   left:10%;
+   height:30%;
+   width:25%;
+   border-radius:1%;
+   display:block;
+   
+  }
+  
+  .zoom1 img{
+    position: absolute;
+   top:50%;
+   left:10%;
+   height:30%;
+   width:25%;
+   border-radius:1%;
+   display:block;
+  }
+
+  .overlay {
+    position: absolute;
+    top:15%;
+    left:10%;
+    background-color: #008CBA;
+    overflow: hidden;
+    transition: .5s ease;
+    width:25%;
+    border-radius:1%;
+  }
+
+  .overlay1 {
+    position: absolute;
+    background-color: #008CBA;
+    overflow: hidden;
+    transition: .5s ease;
+    width:25%;
+    top:50%;
+    left:10%;
+    border-radius:1%;
+  }
+
+  .container:hover .overlay {
+    bottom: 0;
+    height:30%;
+  }
+  
+  .container1:hover .overlay {
+    top: 0;
+    height: 30%;
+  }
+
+  .text-overlay {
+    color: white;
+    font-size: 20px;
+    font-family:"Raleway";
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-overlay a{
+    text-decoration: none; 
+    color:white;
+  }
+  .text-overlay a:visited{
+    text-decoration: none; 
+    color:white;
+  }
+  .text-overlay1 {
+    color: white;
+    font-size: 20px;
+    font-family:"Raleway";
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
