@@ -268,7 +268,7 @@ color:#2f97c1;
     border-radius:1%;
   }
 
-  .overlay1 {
+  .overlay-one {
     position: absolute;
     background-color: #008CBA;
     overflow: hidden;
@@ -284,8 +284,8 @@ color:#2f97c1;
     height:30%;
   }
   
-  .container1:hover .overlay {
-    top: 0;
+  .container:hover .overlay-one {
+    bottom: 0;
     height: 30%;
   }
 
@@ -309,7 +309,7 @@ color:#2f97c1;
     text-decoration: none; 
     color:white;
   }
-  .text-overlay1 {
+  .text-overlay-one {
     color: white;
     font-size: 20px;
     font-family:"Raleway";
