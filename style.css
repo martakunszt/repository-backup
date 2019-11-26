@@ -305,11 +305,11 @@ color:#2f97c1;
     height:30%;
   }
   
-  .container:hover .overlay-one {
+  .container1:hover .overlay-one {
     bottom: 0;
     height: 30%;
   }
-  .container:hover .overlay-two {
+  .container2:hover .overlay-two {
     bottom: 0;
     height:30%;
   }
