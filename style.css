@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+
 *{
       box-sizing:border-box;
   }
@@ -11,14 +13,14 @@
       0%{
         transform: rotate(0deg);
       }
-      25%{
+      /*25%{
         transform: rotate(1deg);
       }
       50%{
         transform: rotate(2deg);
-      }
+      }*/
       100%{
-        transform: rotate(-3deg);
+        transform: rotate(1deg);
       }
       
   }
@@ -58,27 +60,25 @@
   .mtext{
     background-color: rgb(255,255,255); /* Fallback color */
     background-color: rgba(186, 211, 232, 0.4); /*background with opacity for text*/
-    color: #3e525b;
-    border: 3px dotted #f1f1f1;
+    color:#2f97c1;
+    border: 1px solid #f1f1f1;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 80%;
-    padding: 20px;
     text-align: center;
-    font-family:'Raleway', sans-serif;
+    font-family:'Lato', sans-serif;
   }
-  
+
   h1{
       font-size:50px;
-      
   }
 
   .footnote{
     text-align:center;
-    color: #3e525b;
+    color: #2f97c1;
   }
 /*FOOTER*/
   .findex{
@@ -86,7 +86,7 @@
     margin-left:40%;
     z-index:2;
     display: block;
-    font-family:'Raleway', sans-serif;
+    font-family:'Lato', sans-serif;
     position:absolute;
   
   }
@@ -94,11 +94,11 @@
 
   .footnote a:link{
     text-decoration: none;
-    color:#3e525b;
+    color:#ffff;
   }
   .footnote a:visited{
     text-decoration: none;
-    color:#3e525b;
+    color:#ffff
   }
   .footnote a:hover{
     text-decoration: none;
@@ -111,13 +111,11 @@
  
   .fas{
   padding-left:10px;
-  padding-top:3px;
+  padding-top:6px;
   /*margin-bottom:-5px;*/
   position:absolute;
   }
 
-
-  
 
   /*work.html*/
 
@@ -236,6 +234,8 @@ color:#2f97c1;
   }
 
   /*pictures with overlay*/
+
+  /*pictures*/
   .zoom img {
    position: absolute;
    top:15%;
@@ -244,7 +244,6 @@ color:#2f97c1;
    width:25%;
    border-radius:1%;
    display:block;
-   
   }
   
   .zoom1 img{
@@ -257,6 +256,17 @@ color:#2f97c1;
    display:block;
   }
 
+  .zoom2 img {
+    position: absolute;
+    top:15%;
+    left:37.5%;
+    height:30%;
+    width:25%;
+    border-radius:1%;
+    display:block;
+   }
+
+  /*overlay*/
   .overlay {
     position: absolute;
     top:15%;
@@ -279,7 +289,18 @@ color:#2f97c1;
     border-radius:1%;
   }
 
-  .container:hover .overlay {
+  .overlay-two {
+    position: absolute;
+    top:15%;
+    left:37.5%;
+    background-color: #008CBA;
+    overflow: hidden;
+    transition: .5s ease;
+    width:25%;
+    border-radius:1%;
+  }
+  /*overlay:hover*/
+  .container:hover  .overlay{
     bottom: 0;
     height:30%;
   }
@@ -288,7 +309,12 @@ color:#2f97c1;
     bottom: 0;
     height: 30%;
   }
-
+  .container:hover .overlay-two {
+    bottom: 0;
+    height:30%;
+  }
+  
+/*text zoom*/
   .text-overlay {
     color: white;
     font-size: 20px;
@@ -303,13 +329,36 @@ color:#2f97c1;
   }
   .text-overlay a{
     text-decoration: none; 
-    color:white;
   }
   .text-overlay a:visited{
     text-decoration: none; 
     color:white;
   }
-  .text-overlay-one {
+
+/*text zoom1*/
+.text-overlay-one {
+  color: white;
+  font-size: 20px;
+  font-family:"Raleway";
+  position: absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  .text-overlay-one a{
+    text-decoration: none; 
+    color:white;
+  }
+  .text-overlay-one a:visited{
+    text-decoration: none; 
+    color:white;
+  }
+
+  /*text zoom2*/
+  .text-overlay-two {
     color: white;
     font-size: 20px;
     font-family:"Raleway";
@@ -321,4 +370,13 @@ color:#2f97c1;
     transform: translate(-50%, -50%);
     text-align: center;
   }
+  .text-overlay-two a{
+    text-decoration: none; 
+    color:white;
+  }
+  .text-overlay-two a:visited{
+    text-decoration: none; 
+    color:white;
+  }
+ 
 
