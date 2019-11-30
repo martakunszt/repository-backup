@@ -82,7 +82,7 @@
   }
 /*FOOTER*/
   .findex{
-    margin-top:-100px;
+    margin-top:-120px;
     margin-left:40%;
     z-index:2;
     display: block;
@@ -266,12 +266,21 @@ color:#2f97c1;
     display:block;
    }
 
+   .zoom3 img{
+     position:absolute;
+     top:50%;
+     left:37.5%;
+     height:30%;
+     width:25%;
+     border-radius:1%;
+    display:block;
+   }
   /*overlay*/
   .overlay {
     position: absolute;
     top:15%;
     left:10%;
-    background-color: #008CBA;
+    background-color:#2f97c1;
     overflow: hidden;
     transition: .5s ease;
     width:25%;
@@ -280,7 +289,7 @@ color:#2f97c1;
 
   .overlay-one {
     position: absolute;
-    background-color: #008CBA;
+    background-color: #2f97c1;
     overflow: hidden;
     transition: .5s ease;
     width:25%;
@@ -293,9 +302,19 @@ color:#2f97c1;
     position: absolute;
     top:15%;
     left:37.5%;
-    background-color: #008CBA;
+    background-color: #2f97c1;
     overflow: hidden;
     transition: .5s ease;
+    width:25%;
+    border-radius:1%;
+  }
+  .overlay-three{
+    position:absolute;
+    top:50%;
+    left:37.5%;
+    background-color:#2f97c1;
+    overflow:hidden;
+    transition:.5s ease;
     width:25%;
     border-radius:1%;
   }
@@ -314,6 +333,10 @@ color:#2f97c1;
     height:30%;
   }
   
+  .container3:hover .overlay-three{
+    bottom:0;
+    height:30%;
+  }
 /*text zoom*/
   .text-overlay {
     color: white;
@@ -379,4 +402,25 @@ color:#2f97c1;
     color:white;
   }
  
+  /*text zoom3*/
+  .text-overlay-three {
+    color: white;
+    font-size: 20px;
+    font-family:"Raleway";
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-overlay-three a{
+    text-decoration: none; 
+    color:white;
+  }
+  .text-overlay-three a:visited{
+    text-decoration: none; 
+    color:white;
+  }
 
