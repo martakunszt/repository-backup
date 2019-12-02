@@ -7,6 +7,8 @@
   body {
     margin:0;
     padding:0;
+    font-family:'Lato', sans-serif;
+    
   }
   /*animation for the background index.html*/
   @keyframes drift{
@@ -123,6 +125,7 @@
     background:#eafdf8;
     margin:0;
     padding:0;
+    font-family:'Lato', sans-serif;
   }
 
   header{
@@ -424,3 +427,55 @@ color:#2f97c1;
     color:white;
   }
 
+/*Social.html*/
+#sbody{
+  background-color:#eafdf8;
+}
+
+/*sidemenu work html*/
+/*.menu-right{
+  background-color: #ffff;
+  height:200px;
+  width:300px;
+}
+*/
+.menu-right a{
+  position: absolute;
+  right: -20px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 15%;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  color:#2f97c1;
+  text-transform: capitalize;
+  background-color: #ffff
+}
+
+.menu-right a:hover{
+  right:3px;
+  border-radius:5px 0 0 5px;
+}
+
+#home{
+  top:28%;
+  border-radius:5px 0 0 0;
+}
+
+#contact{
+  top:35%;
+}
+
+#projects{
+  top:42%;
+}
+
+#social{
+  top:47%;
+}
+
+#cv{
+  top:53%;
+  border-radius:0 0 0 5px;
+}
